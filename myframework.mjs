@@ -43,6 +43,10 @@ export class MyFramework {
             data.innerText = componentUsage.innerText
             const componentUsageRender = render(template, data)
             componentUsage.innerHTML = componentUsageRender
+            const method = this.$lookupFromVm(componentUsage.dataset.method) || {}
+            for (let m in method) {
+                componentUsage[m] = method[m]
+            }
         })
     }
 }

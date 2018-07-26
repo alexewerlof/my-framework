@@ -11,7 +11,12 @@ const vm = {
             title: 'HTML can do a lot',
             body: 'You will be amazed to see how much the basic HTML can do for you!'
         }
-    ]
+    ],
+    loginBtn: {
+        onclick(event) {
+            alert('Welcome you are logged in!')
+        }
+    }
 }
 
 const myFramework = new MyFramework('app', vm)

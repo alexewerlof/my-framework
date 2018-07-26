@@ -1,3 +1,9 @@
+site-header {
+    display: block;
+    padding: 1em;
+    background-color: red;
+}
+
 site-header ul {
     margin: 0;
     padding: 0;
