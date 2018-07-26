@@ -15,5 +15,8 @@ const vm = {
 }
 
 const myFramework = new MyFramework('app', vm)
-myFramework.defineComponent('news-item')
-myFramework.defineComponent('cta-button')
+myFramework.defineComponent({
+    templateId: 'site-header.html',
+    tagId: 'site-header',
+    css: './site-header.css'
+})
